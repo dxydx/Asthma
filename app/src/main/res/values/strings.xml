@@ -1,0 +1,71 @@
+<resources>
+    <!-- update string -->
+    <string name="version_info">Version 1.0. \nLast updated 6 May 2019</string>
+
+    <!-- strings in main activity -->
+    <string name="app_name">Asthma</string>
+    <string name="main_activity_button_1">Diary</string>
+    <string name="main_activity_button_2">Self Management</string>
+    <string name="main_activity_button_3">Action Plan</string>
+    <string name="main_activity_button_4">Appointments</string>
+
+    <!-- temporary strings: placeholders etc -->
+    <string name="uc">Under Construction</string>
+
+    <!-- strings in menu -->
+    <string name="menu">Menu</string>
+
+    <!-- strings in alerts -->
+    <string name="alerts">Alerts</string>
+
+    <!-- strings in diary -->
+    <string name="date_time">Date/Time</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="now"><u>Now</u></string>
+
+    <string name="PEFR">Peak Flow:</string>
+    <string name="PEFR_tooltip">Your best peak flow out of 3 attempts</string>
+    <string name="PEFR_unit">L/min</string>
+
+    <string name="symptoms">Symptoms:</string>
+    <string name="symptom1">Well (No symptoms)</string>
+    <string name="symptom2">Mild shortness of breath</string>
+    <string name="symptom3">Severe shortness of breath</string>
+
+    <string name="save_record">Save Record</string>
+    <string name="summary">View Summary</string>
+
+    <string name="toast_error">Please fill in all required fields</string>
+    <string name="toast_error2">Wrong format for Peak flow. Numbers only</string>
+    <string name="toast_record_saved">Record saved!</string>
+
+    <string name="symptom_error">Error: No symptom selected</string>
+
+    <string name="diary_summary">Asthma Diary Summary</string>
+
+    <string name="graph">Asthma Diary Graph</string>
+    <string name="diurnal">Diurnal</string>
+    <string name="daily">Daily</string>
+
+    <!-- strings in self management -->
+
+
+    <!-- strings in action plan -->
+
+
+    <!-- strings in appointments -->
+    <string name="appt">Asthma Appointments</string>
+    <string name="next">Next Appointment:</string>
+    <string name="prev">Previous Appointments:</string>
+
+    <string name="status">&lt;Status&gt;</string>
+    <string name="attended">Attended</string>
+    <string name="missed">Missed</string>
+    <string name="cancelled">Cancelled</string>
+
+    <string name="date_error">Error: Date not found</string>
+
+    <string name="enter_new_appt">Enter New Appointment</string>
+
+</resources>

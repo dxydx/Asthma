@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="appt_status_array">
+        <item>&lt;Status&gt;</item>
+        <item>Attended</item>
+        <item>Cancelled</item>
+    </string-array>
+
+    <string-array name="languages_array">
+        <item>English</item>
+        <item>中文</item>
+        <item>Bahasa Melayu</item>
+    </string-array>
+
+</resources>

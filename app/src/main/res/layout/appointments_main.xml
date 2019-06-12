@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/Header2"
+            android:paddingLeft="8dp"
+            android:paddingTop="8dp"
+            android:text="@string/next" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingBottom="@dimen/activity_vertical_margin">
+
+            <TextView
+                android:id="@+id/nextDateTextView"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/nextDoctorTextView"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content" />
+
+            <Spinner
+                android:id="@+id/nextStatusSpinner"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/Header2"
+            android:paddingLeft="8dp"
+            android:text="@string/prev" />
+
+        <ListView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/appt_record_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            tools:context="com.example.android.asthma.AppointmentsMainActivity" />
+
+    </LinearLayout>
+
+    <!-- button to enter new appt at bottom of screen -->
+    <Button
+        style="@style/BottomButton"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:onClick="enterNewAppointment"
+        android:text="@string/enter_new_appt" />
+
+</RelativeLayout>

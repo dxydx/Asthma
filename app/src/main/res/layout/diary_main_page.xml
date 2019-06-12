@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="8dp">
+
+            <!-- Date/time horizontal linear layout -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/Header2"
+                    android:paddingRight="8dp"
+                    android:text="@string/date_time" />
+
+                <!-- create date picker for this box -->
+                <TextView
+                    android:id="@+id/date"
+                    style="@style/Header2"
+                    android:minWidth="96dp"
+                    android:maxWidth="160dp"
+                    android:text="@string/date"
+                    android:onClick="openDatePickerDialog"/>
+
+                <TextView
+                    android:paddingLeft="12dp"
+                    android:id="@+id/set_date_time"
+                    style="@style/Header2"
+                    android:text="@string/now"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:onClick="setNow"/>
+
+            </LinearLayout>
+
+            <!-- PEFR -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/Header2"
+                    android:text="@string/PEFR" />
+
+                <!-- TODO: Add '?' image -->
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:tooltipText="@string/PEFR_tooltip"
+                    app:srcCompat="@android:drawable/star_on"
+                    android:onClick="showToolTip"/>
+
+                <EditText
+                    android:id="@+id/pefr_value"
+                    style="@style/Header2"
+                    android:inputType="number"
+                    android:minWidth="48sp" />
+
+                <TextView
+                    style="@style/Header2"
+                    android:text="@string/PEFR_unit" />
+
+            </LinearLayout>
+
+            <!-- Symptoms -->
+            <TextView
+                style="@style/Header2"
+                android:text="@string/symptoms" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkBox1"
+                    style="@style/CheckBox" />
+
+                <TextView
+                    style="@style/Header2"
+                    android:text="@string/symptom1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkBox2"
+                    style="@style/CheckBox" />
+
+                <TextView
+                    style="@style/Header2"
+                    android:text="@string/symptom2" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkBox3"
+                    style="@style/CheckBox" />
+
+                <TextView
+                    style="@style/Header2"
+                    android:text="@string/symptom3" />
+            </LinearLayout>
+
+            <!-- kiv add more options for optional input eg triggers, medications taken -->
+
+            <!-- add background and text colors for bottom buttons -->
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <android.support.constraint.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/diary_view_summary"
+            style="@style/BottomButton"
+            android:text="@string/summary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            android:onClick="viewSummary"/>
+
+        <Button
+            style="@style/BottomButton"
+            android:text="@string/save_record"
+            app:layout_constraintBottom_toTopOf="@id/diary_view_summary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            android:onClick="saveRecord"/>
+
+    </android.support.constraint.ConstraintLayout>
+</LinearLayout>
